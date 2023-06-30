@@ -4,12 +4,12 @@ def guess(x):
     random_number = random.randint(1, x)
     guess = 0
     while guess != random_number:
-        guess = int(input("Tebak angka yang benar: "))
+        guess = int(input("Guess the number: "))
         if guess > random_number:
             print(f'Sorry, {guess} too high!!')
         elif guess < random_number:
             print(f'Sorry, {guess} too low!')
-    print(f'Yay, anda benar. {random_number} adalah angka yang benar!')
+    print(f'Yay, congrats. You have guessed the correct number. {random_number}!')
 
 
 def computer_guess(x):
